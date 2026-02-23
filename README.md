@@ -29,16 +29,6 @@ Le projet est organisé autour de **3 pages principales** :
 
 ---
 
-### ❓ Informations manquantes / ambiguës à confirmer (avant version figée)
-
-1. **Traitement du formulaire** : `contact.html` envoie vers `submit_form.php`, mais ce fichier n’est pas présent dans le dépôt. Souhaitez-vous un backend réel, un service tiers (Formspree, EmailJS), ou un mode purement statique ?
-2. **Polices locales** : `CWAD.css` référence des fichiers dans `fonts/` (`Athelas`, `Montserrat`, `Open Sans`) mais ce dossier n’existe pas ici. Faut-il ajouter les fichiers de police ou basculer sur Google Fonts / polices système ?
-3. **Déploiement cible** : aucune cible de déploiement n’est indiquée (GitHub Pages, Netlify, serveur Apache/Nginx). Quelle plateforme faut-il documenter officiellement ?
-4. **Licence** : aucune licence explicite n’est fournie dans le projet. Souhaitez-vous une licence open-source (MIT, Apache-2.0) ou une mention “tous droits réservés” ?
-5. **Versionnage et roadmap** : pas de changelog ni plan de versions. Voulez-vous une section roadmap (accessibilité, SEO, responsive avancé, backend formulaire) ?
-
----
-
 ### 🛠️ Stack technique
 
 <div align="center">
@@ -100,35 +90,35 @@ Le projet est organisé autour de **3 pages principales** :
 <div align="center">
 
 ```text
-cwad/
-├── Activités.html
-├── contact.html
-├── CWAD.css
-├── CWAD.html
-├── fichier_rapport/
-│   ├── Rapport_Projet_CWAD.docx
-│   └── Rapport_Projet_CWAD.pdf
-└── images/
-    ├── bowling.png
-    ├── casino.png
-    ├── contact.png
-    ├── dimensional_key_pass.png
-    ├── escape_game.webp
-    ├── futur.jpg
-    ├── infinity_pass.png
-    ├── jeu_d'arcade.png
-    ├── laser_game.png
-    ├── logo_activités.webp
-    ├── logo_maps.png
-    ├── logo_multiverse_quest.PNG
-    ├── logo_universite.png
-    ├── paintball.png
-    ├── portal_pass.png
-    ├── quantum_pass.png
-    ├── réalité_virtuelle.png
-    ├── realité_virtuelle.webp
-    ├── voyageur_pass.png
-    └── ... (autres logos sponsors)
+ 📁 cwad/                                  
+├── Activités.html                      
+├── contact.html                        
+├── CWAD.css                            
+├── CWAD.html                           
+├── 📁 fichier_rapport/                
+│   ├── Rapport_Projet_CWAD.docx        
+│   └── Rapport_Projet_CWAD.pdf         
+└── 📁 images/                         
+    ├── bowling.png                      
+    ├── casino.png                       
+    ├── contact.png                      
+    ├── dimensional_key_pass.png         
+    ├── escape_game.webp                 
+    ├── futur.jpg                        
+    ├── infinity_pass.png                
+    ├── jeu_d'arcade.png                 
+    ├── laser_game.png                   
+    ├── logo_activités.webp              
+    ├── logo_maps.png                    
+    ├── logo_multiverse_quest.PNG        
+    ├── logo_universite.png              
+    ├── paintball.png                    
+    ├── portal_pass.png                  
+    ├── quantum_pass.png                 
+    ├── réalité_virtuelle.png            
+    ├── realité_virtuelle.webp           
+    ├── voyageur_pass.png                
+    └── ... (autres logos sponsors)      
 ```
 
 </div>
@@ -146,17 +136,12 @@ Aucune variable `.env` obligatoire détectée dans le code actuel.
 - `CWAD.css` : styles globaux, responsive, composants visuels.
 - Liens internes relatifs entre les pages HTML.
 
-#### Points de configuration à prévoir (si évolution)
-- Endpoint de traitement du formulaire (`submit_form.php` ou alternative).
-- Gestion des polices (`fonts/` manquant actuellement).
-
 ---
 
 ### ⚡ Installation & démarrage
 
 #### 1. Prérequis
 - Un navigateur moderne (Chrome, Edge, Firefox).
-- Optionnel : un serveur local pour éviter les limitations `file://`.
 
 #### 2. Installation
 ```bash
@@ -169,15 +154,6 @@ Aucune variable `.env` obligatoire détectée dans le code actuel.
 
 #### 3. Lancement (mode simple)
 Ouvrir `CWAD.html` directement dans le navigateur.
-
-#### 4. Lancement (recommandé, serveur local)
-```bash
-# Python 3
-python -m http.server 8080
-
-# Puis ouvrir
-http://localhost:8080/CWAD.html
-```
 
 ---
 
@@ -199,9 +175,8 @@ http://localhost:8080/CWAD.html
 
 ### 📄 Licence
 
-Licence non définie dans l’état actuel du projet.
-
-> Suggestion : ajouter un fichier `LICENSE` et préciser les conditions d’utilisation du contenu (textes, images, rapport).
+> Projet sous licence MIT \
+> Référence vers le fichier LICENSE
 
 ---
 
