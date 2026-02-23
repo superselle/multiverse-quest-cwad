@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- pris dans le site de l'aventure fantastique et bomb squad -->
+    <link rel="stylesheet" href="CWAD.css">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/png" href="images/contact.png">
+</head>
+<body>
+
+    <!-- Header avec logo et titre -->
+	<header>
+		<div id="header"> <!--pris sur le site diabolik lovers-->
+			<nav>
+				<a href="./CWAD.html">
+				<img src="images/logo_multiverse_quest.PNG" alt="Logo Multiverse Quest">
+				</a>
+			</nav>
+		</div>
+		<h1>Contact</h1>
+
+	</header>
+
+    <!-- Liens de navigation -->
+    <nav id="nav" >
+        <a href="./CWAD.html">Nous Découvrir</a>
+        <a href="./Activités.html">Activités</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <!-- Contenu principal de la page Contact -->
+    <main>
+        <section>
+            <h2>Nous Contacter</h2>
+            <p class="important" >Merci de remplir le formulaire ci-dessous pour réserver votre pass ou nous poser vos questions.</p>
+            
+            <!-- Formulaire de contact -->
+            <form action="submit_form.php" method="POST">
+                <!-- Champ pour le nom -->
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+    
+                <!-- Champ pour le prénom -->
+                <label for="surname">Prénom :</label>
+                <input type="text" id="surname" name="surname" required>
+    
+                <!-- Champ pour l'email -->
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+    
+                <!-- Sélection du tarif ou pass choisi -->
+                <label for="pass">Tarif ou Pass choisi :</label>
+                <select id="pass" name="pass" required>
+                    <option value="">Choisir un Pass</option>
+                    <option value="Infinity Pass">Infinity Pass</option>
+                    <option value="Quantum Pass">Quantum Pass</option>
+                    <option value="Voyageur Pass">Voyageur Pass</option>
+                    <option value="Dimensional Key Pass">Dimensional Key Pass</option>
+                    <option value="Portal Pass">Portal Pass</option>
+                </select>
+    
+                <!-- Sélection du moyen de paiement -->
+                <label for="payment">Moyen de paiement :</label>
+                <select id="payment" name="payment" required>
+                    <option value="">Choisir un moyen de paiement</option>
+                    <option value="Carte de crédit">Carte de crédit</option>
+                    <option value="Paypal">Paypal</option>
+                    <option value="Virement bancaire">Virement bancaire</option>
+                </select>
+    
+                <!-- Sélection de la date -->
+                <label for="date">Date de visite :</label>
+                <input type="date" id="date" name="date" required>
+    
+                <!-- Bouton de soumission -->
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <section id="contact-info">
+            <h2>Contactez-nous et trouvez-nous facilement</h2>
+        
+            <!-- Adresse avec numéro de métro -->
+            <p>
+                Adresse : 10 place des 3 gares, 95800 Cergy le haut, FRANCE
+                <br>
+                Métro le plus proche : <strong>Station "Cergy le Haut"</strong> (RER A)
+            </p>
+        
+            <!-- Lien vers Google Maps pour afficher l'adresse -->
+            <p>
+                <a href="https://www.google.fr/maps/place/10+Pl.+des+3+Gares,+95800+Cergy/@49.0465433,2.0060776,15.38z/data=!4m5!3m4!1s0x47e6f3661d12606f:0x8813bea419a8ccba!8m2!3d49.0484424!4d2.010913?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+				
+				<img src="images/logo_maps.png" alt="Logo de maps">
+                </a>
+            </p>
+        
+            <!-- Embed d'une carte Google Maps directement sur la page -->
+            <div class="map-container">
+                <iframe 
+                    src="images/carte_maps_multiverse_quest.PNG"
+                    allowfullscreen="">
+                </iframe>
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>Site internet réalisé par BOUZLAFA Selman et AGOUBI Cathya</p>
+        <address>
+            <p>IUT D'Orsay - 13 avenue des Sciences - 91190 Gif-sur-Yvette | FRANCE</p>
+            <p> fichier du rapport a telecharger :
+            <a href="fichier_rapport/Rapport_Projet_CWAD.pdf">pdf</a><a href="fichier_rapport/Rapport_Projet_CWAD.docx">/Word</a></p>
+            <a href="https://www.iut-orsay.universite-paris-saclay.fr/">
+            <img src="images/logo_universite.png" alt="Logo de l'Université Paris Saclay">
+            </a>
+        
+        </address>
+    </footer>
+
+</body>
+
+</html>
